@@ -1,0 +1,41 @@
+{
+  "name": "@solarexfinance/core",
+  "description": "Core contracts for the Solarex Finance protocol",
+  "version": "1.0.0",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/D-H-O-R-A/solarexfinance"
+  },
+  "keywords": [
+    "solarex",
+    "zksync",
+    "ethereum"
+  ],
+  "devDependencies": {
+    "@matterlabs/hardhat-zksync-deploy": "^0.6.3",
+    "@matterlabs/hardhat-zksync-solc": "^0.3.16",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethereumjs-util": "^7.1.4",
+    "hardhat": "^2.14.0",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2",
+    "zksync-web3": "^0.14.3"
+  },
+  "scripts": {
+    "build": "yarn hardhat compile",
+    "compile": "yarn hardhat compile",
+    "test": "yarn hardhat test",
+    "deploy": "yarn hardhat deploy-zksync --network zksync"
+  },
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@matterlabs/signature-checker": "^1.1.0"
+  }
+}
